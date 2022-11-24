@@ -1,0 +1,230 @@
+{
+    "intents": [
+      {
+        "tag": "pembuka1",
+        "patterns": [
+          "hallo",
+          "hai",
+          "halo",
+          "hei",
+          "hi",
+          "hy",
+          "pagi",
+          "siang",
+          "malam",
+          "kawan"
+        ],
+        "responses": [
+          "Hai! mimin di sini. Ada yang bisa kami bantu?",
+          "Hello!"
+        ],
+        "context": [""]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Dah",
+          "Dadah",
+          "Bye",
+          "Byee",
+          "Good bye",
+          "Selamat tinggal",
+          "Sampai jumpa",
+          "Bai",
+          "See you"
+        ],
+        "responses": [
+            "Hai! mimin di sini. Ada yang bisa kami bantu?",
+            "Hello!"
+        ],
+        "context": [""]
+      },
+      {
+        "tag": "pembuka2",
+        "patterns": [
+            "Apa itu Mental Health?",
+            "Apaan tuh Mental Health?",
+            "Mental Health itu apasi?",
+            "Mental Health itu apa?",
+            "Mental Health itu apa"
+        ],
+        "responses": [
+            "Mental Health adalah kondisi di mana individu terbebas dari segala bentuk gejala-gejala gangguan mental",
+            "Mental Health atau Kesehatan mental itu sendiri menurut WHO adalah suatu keadaan (status) sehat utuh secara fisik, mental (rohani) dan sosial, dan bukan hanya suatu keadaan yang bebas dari penyakit, cacat dan kelemahan."
+        ],
+        "context": [""]
+        },
+        {
+        "tag":"pembuka3",
+        "patterns": [
+            "Mental Health apakah penting diperhatikan?",
+            "Apakah Mental Health itu penting?",
+            "Mengapa Mental Health itu penting?"
+        ],
+        "responses": [
+            "Mental Health / Kesehatan mental merupakan hal penting yang perlu diperhatikan selayaknya kesehatan fisik. Sebab kondisi kestabilan kesehatan mental dan fisik saling mempengaruhi",
+            "Dilansir dari laman halodoc.com kesehatan mental sama pentingnya dengan kesehatan fisik. Mental yang sehat dan positif memungkinkan tubuh berfungsi dengan baik dan membantu untuk memiliki koneksi sosial dengan orang lain. Kesehatan mental mencakup kesejahteraan emosional, psikologis, dan sosial kita. Hal tersebut memengaruhi cara berpikir, merasakan, dan bertindak. Kesehatan mental yang baik juga membantu menentukan cara mengelola stres, berhubungan dengan orang lain, dan membuat sebuah pilihan.",
+            "Sangat penting"
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka4",
+        "patterns": [
+            "Cara menjaga kesehatan mental?",
+            "Bagaimana cara menjaga kesehatan mental?"
+        ],
+        "responses":[
+            "1. Olahraga Teratur",
+            "2. Makan sehat dan teratur",
+            "3. Tidur yang cukup",
+            "4. Meditasi",
+            "5. Menulis di Jurnal/Diary",
+            "6. Kurangi Kafein",
+            "7. Jaga komunikasi dengan orang-orang tersayang"
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka5",
+        "patterns": [
+            "Apa manfaat dari menjaga Mental Health?",
+            "Mengapa Mental Health perlu dijaga?"
+        ],
+        "responses":[
+            "Kesehatan mental yang terjaga juga bisa membuat seseorang lebih fokus dan menunjukkan potensi mereka.",
+            "1. Menyadari potensi dalam diri pribadi",
+            "2. Mengatasi stres atau tekanan hidup",
+            "3. Bekerja lebih produktif",
+            "4. Memberi kontribusi berharga bagi komunitas"
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka6",
+        "patterns": [
+            "Ciri-ciri kondisi mental health yang kurang baik?",
+            "Bagaimana ciri-ciri orang yang terkena masalah dengan mental healthnya?"
+        ],
+        "responses":[
+            "Gangguan atau perubahan pola tidur atau makan (berkurang / berlebihan)", 
+            "Sulit fokus, menjadi mudah lupa sehingga terjadi penurunan kualitas hidup",
+            "Banyak keluhan fisik ( pusing, leher kaku, sesak, linu-linu, perut panas, lemas, mual dll ).",
+            "Overthinking, cemas, khawatir yang berlebihan, takut, gelisah atau bingung",
+            "Emosi menjadi labil, mudah marah, jengkel,atau sedih",
+            "Melukai diri sendiri",
+            "Menarik diri dari lingkungan sosial, keluarga dan aktivitas sehari-hari",
+            "Mudah lelah, tidak punya semangat, putus asa",
+            "Hubungan dengan keluarga atau teman terganggu"
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka7",
+        "patterns":[
+            "Macam-macam Mental Health?",
+            "Apasaja macam macam Mental Health?"
+        ],
+        "responses":[ 
+            "Secara umum dan yang paling banyak dikenal diantaranya ada OCD, PTSD, Depresi, Gangguan Kecemasan, Gangguan Mood, Gangguan Makan,dan Gangguan Kepribadian"
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka8",
+        "patterns":[
+            "Apa itu OCD?",
+            "OCD itu apa?",
+            "Apa yang dimaksud dengan OCD?"
+        ],
+        "responses":[
+            "Obsessive Compulsive Disorder atau disingkat OCD adalah bentuk masalah kesehatan mental yang membuat pengidapnya mempunyai pemikiran dan dorongan yang tidak bisa dikontrol yang sifatnya berulang (obsesi) serta munculnya perilaku (paksaan) kompulsif. Contoh perilaku kompulsif misalnya mencuci tangan hingga berulang kali setelah melakukan kontak langsung terhadap sesuatu yang menurutnya tidak bersih. Pemikiran dan perilaku tersebut tidak mampu dikendalikan oleh pengidap. Meski pengidap bisa jadi tidak memiliki pikiran maupun keinginan untuk melakukan hal tersebut, ia seperti tidak berdaya untuk menghentikannya. Artinya, OCD bisa memberikan pengaruh yang sangat signifikan terhadap berbagai aspek kehidupan pengidapnya."
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka9",
+        "patterns":[
+            "Apa itu PTSD?",
+            "PTSD itu apa?",
+            "Apa yang dimaksud dengan PSTD?"
+        ],
+        "responses":[
+            "PTSD (post-traumatic stress disorder) atau gangguan stres pascatrauma adalah gangguan mental yang muncul setelah seseorang mengalami atau menyaksikan peristiwa yang bersifat traumatis atau sangat tidak menyenangkan. PTSD merupakan gangguan kecemasan yang membuat penderitanya teringat pada kejadian traumatis. Beberapa peristiwa traumatis yang dapat memicu PTSD adalah perang, kecelakaan, bencana alam, dan pelecehan seksual"
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka10",
+        "patterns":[
+            "Apa itu Depresi?",
+            "Depresi itu apa?",
+            "Apa yang dimaksud dengan Depresi?"
+        ],
+        "responses":[
+            "Depresi adalah gangguan suasana hati (mood) yang ditandai dengan perasaan sedih yang mendalam dan kehilangan minat terhadap hal-hal yang disukai. Seseorang dinyatakan mengalami depresi jika sudah 2 minggu merasa sedih, putus harapan, atau tidak berharga. Depresi yang dibiarkan terus berlanjut dan tidak mendapatkan penanganan dapat menyebabkan terjadinya penurunan produktifitas kerja, gangguan hubungan sosial, hingga munculnya keinginan untuk bunuh diri."
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka11",
+        "patterns":[
+            "Apa itu gangguan kecemasan?",
+            "Gangguan Kecemasan itu apa?",
+            "Apa yang dimaksud dengan Gangguan Kecemasan?"
+        ],
+        "responses":[
+            "Cemas anxiety adalah perasaan gugup atau gelisah. Biasanya orang akan mengalami rasa cemas ketika berhadapan dengan situasi tertentu, seperti sebelum wawancara kerja, sebelum ujian, saat harus mengambil keputusan penting, atau ketika menunggu hasil pemeriksaan dokter. Rasa cemas merupakan reaksi alami tubuh terhadap stres, yang sebenarnya bermanfaat untuk membuat kita menjadi lebih berhati-hati dan waspada. Namun, rasa cemas bisa menjadi tidak sehat jika muncul secara berlebihan, sulit dikontrol, atau sampai mengganggu aktivitas sehari-hari. Kondisi ini disebut sebagai gangguan kecemasan."   
+        ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka12",
+        "patterns":[
+            "Apa itu gangguan mood?",
+            "Gangguan Mood itu apa?",
+            "Apa yang dimaksud dengan Gangguan Mod?"
+            ],
+        "responses":[
+            "Mood disorder atau gangguan suasana hati adalah gangguan kesehatan mental yang memengaruhi keadaan emosi seseorang. Gangguan ini menyebabkan seseorang mengalami kebahagiaan yang ekstrem, kesedihan yang ekstrem, atau keduanya secara bergantian, dalam waktu yang lama."   
+            ],
+        "context":[""]
+        },
+        {
+        "tag":"pembuka13",
+        "patterns":[
+            "Apa itu gangguan makan?",
+            "Gangguan Makan itu apa?",
+            "Apa yang dimaksud dengan Gangguan Makan?"
+            ],
+        "responses":[
+            "Eating disorders merupakan gangguan makan atau perilaku terkait makan yang berlangsung terus-menerus sehingga menyebabkan masalah kesehatan serius, baik fisik maupun psikososial. Eating disorders dapat mempengaruhi kemampuan tubuh untuk mendapatkan nutrisi yang dibutuhkan."   
+            ],
+        "context":[":"]
+        },
+        {
+        "tag":"pembuka14",
+        "patterns":[
+            "Apa itu Gangguan Kepribadian?",
+            "Gangguan Kepribadian itu apa?",
+            "Apa yang dimaksud dengan Gangguan Kepribadian?"
+            ],
+        "responses":[
+            "Gangguan disosiatif sering kali terjadi sebagai mekanisme pertahanan diri secara psikologis untuk mengatasi trauma, bisa karena pelecehan fisik, seksual, hingga emosional yang terjadi ketika masa kanak-kanak atau berbagai peristiwa traumatis lainnya. Namun, faktor lingkungan ternyata turut berperan meski ini jarang ditemui, seperti stres. Orang dengan gangguan kepribadian memiliki pola berpikir dan bertindak yang berbeda dari apa yang masyarakat anggap normal. Selain itu, pengidap umumnya memiliki keterampilan penyelesaian masalah yang buruk dan kesulitan membentuk hubungan yang sehat dengan orang lain."   
+            ],
+            "context":[""]
+        },
+        {
+        "tag":"pembuka14",
+        "patterns":[
+            "Apa itu Gangguan Kepribadian?",
+            "Gangguan Kepribadian itu apa?",
+            "Apa yang dimaksud dengan Gangguan Kepribadian?"
+            ],
+        "responses":[
+            "Gangguan disosiatif sering kali terjadi sebagai mekanisme pertahanan diri secara psikologis untuk mengatasi trauma, bisa karena pelecehan fisik, seksual, hingga emosional yang terjadi ketika masa kanak-kanak atau berbagai peristiwa traumatis lainnya. Namun, faktor lingkungan ternyata turut berperan meski ini jarang ditemui, seperti stres. Orang dengan gangguan kepribadian memiliki pola berpikir dan bertindak yang berbeda dari apa yang masyarakat anggap normal. Selain itu, pengidap umumnya memiliki keterampilan penyelesaian masalah yang buruk dan kesulitan membentuk hubungan yang sehat dengan orang lain."   
+            ],
+        "context":[""]
+        }
+        ]
+    }

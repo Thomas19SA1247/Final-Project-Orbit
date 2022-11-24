@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Mental Health</title>
+    <!---style prediksi-->
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Plus Jakarta Sans',sans=serif;
+            background-color: #ffffff;
+        }
+
+        /*navbar*/
+        nav {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            background-color: #98A5B2;
+            box-shadow: -1px -7px 20px 0px bisque;
+        }
+
+        nav ul {
+            position: relative;
+            top: 20px;
+            margin: 0;
+            float: right;
+            right: 10%;
+        }
+
+        nav ul li {
+            float: left;
+            display: block;
+            margin: 0px 15px 0px 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: "Helvetica", sans-serif;
+        }
+
+        nav ul li a:hover {
+            background-color: #2E4C6D;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #F5FFFA;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .menu-mobile{
+            position: relative;
+            float: right;
+            display: none;
+        }
+        .menu-mobile a{
+            color: bisque;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 5px 10px 5px 10px;
+            border: 1px solid beige;
+        }
+
+        /* deskripsi */
+        section#prediksi{
+            position: relative;
+            max-width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+             margin-top: 15px;
+            border-radius: 6px;
+            background-color: #d9e2eb;
+            box-shadow: 0 0 7px 0px rgba(136, 146, 146, 0.2);
+            padding: 20px;
+        }
+
+        /* form */
+        .bg-blue{
+            background-color:#708090;
+            font-family: "Helvetica", sans-serif;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        section#input-par{
+            position: relative;
+            max-width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 10px;
+            border-radius: 6px;
+            background-color: #d9e2eb;
+            box-shadow: 0 0 7px 0px rgba(136, 146, 146, 0.2);
+            padding: 30px;
+        }
+        #input-par .form{
+            width: 100%;
+            display: grid;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        label{
+            font-family: "Helvetica", sans-serif;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+        input{
+            font-family: "Helvetica", sans-serif;
+            padding: 10px 20px 10px 20px;
+            outline: none;
+            border-radius: 3px;
+            border: 1px solid #2E4C6D;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        p{
+            font-family: "Helvetica", sans-serif;
+            outline: none;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        h2 {
+           color: rgb(5, 5, 5);
+           margin-left: 20px;
+           text-align: left;
+           font-family: "Helvetica", sans-serif;
+           }
+        h4 {
+           color: rgb(5, 5, 5);
+           margin-left: 20px;
+           text-align: left;
+           font-family: "Helvetica", sans-serif;
+           }
+        .header img{
+            max-width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 20px;
+            border-radius: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-mobile">
+            <a href="">Menu</a>
+        </div>
+        <ul>
+            <li><a href="/">BERANDA</a></li>
+            <li><a href="/prediksi">PREDIKSI</a></li>
+            <li><a href="/chatbot">CHATBOT</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <img src={{ url_for('static', filename="images/pict4.png" ) }} height="auto" width="auto"/>
+    </div>
+    <section id=prediksi>
+        <div class="kolom">
+            <h2>Keterangan :<h2>
+            <h4>0 = Tidak</h4>
+            <h4>1 = Ya</h4>
+        </div>
+    </section>
+
+    <section id="input-par">
+        <form method="POST", action="{{url_for('prediksi')}}">
+            <div class="form">
+                <label>Nama</label>
+                <input type="text", name="nm",
+                placeholder="Masukkan nama anda", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Umur</label>
+                <input type="text", name="um",
+                placeholder="Masukkan umur anda", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Jenis Kelamin</label>
+                <input type="text", name="jm",
+                placeholder="Laki laki / Perempuan", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Apakah belakangan ini mood anda sedang tidak stabil?</label>
+                <input type="text", name="Mood",
+                placeholder="0/1", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Apakah belakangan ini anda sering pusing?</label>
+                <input type="text", name="Sering_Pusing",
+                placeholder="0/1", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Apakah anda sering menangis secara tiba tiba tanpa alasan?</label>
+                <input type="text", name="Sering_Menangis",
+                placeholder="0/1", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Apakah anda sering mengalami sulit tidur?</label>
+                <input type="text", name="Sulit_Tidur",
+                placeholder="0/1", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Apakah belakangan ini pola makan anda tidak teratur?</label>
+                <input type="text", name="Pola_Makan",
+                placeholder="0/1", value='', required="required">
+            </div>
+            <div class="form">
+                <label>Apakah anda belakangan ini sering gelisah tanpa sebab?</label>
+                <input type="text", name="Sering_Gelisah",
+                placeholder="0/1", value='', required="required">
+            </div>
+            <div class="form">
+                <input type="submit",
+                value="PREDIKSI", class="bg-blue">
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
